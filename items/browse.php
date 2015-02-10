@@ -18,7 +18,7 @@
         <?php foreach (loop('items') as $item): ?>
 
         <div class="item hentry">
-            <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>
+            <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
 
             <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
