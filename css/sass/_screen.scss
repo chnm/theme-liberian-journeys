@@ -20,6 +20,7 @@ ul {
 
 nav ul{
     list-style: none;
+    padding:0;
 }
 
 .clear {
@@ -38,7 +39,11 @@ nav ul{
 
 .ital {
     font-style: italic;
-;}
+}
+
+.hidden {
+    display: none;
+}
 
  h1,  h2,  h3,  h4,  h5,  h6  {
     font-family:'Lato', sans-serif;
@@ -354,10 +359,17 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 .items-list {
     clear:both;
     padding-top:20px;
+
+    ul {
+        list-style:none;
+    }
 }
 
 #outputs {
     clear:both;
+    margin-top:10px;
+    padding-top:10px;
+    border-top: 1px solid #ededed;
 }
 
 .documents .item, .stories .item {
@@ -368,6 +380,20 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
     h5 {
         margin-bottom:0.5rem;
+    }
+}
+
+.items.browse.all .hentry {
+    float:left;
+    clear:both;
+    width:100%;
+    border-bottom: 1px solid #ededed;
+    margin-bottom:10px;
+    padding-bottom:10px;
+
+    .item-img {
+        float:left;
+        margin-right:10px;
     }
 }
 
@@ -408,7 +434,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }
 
 .more-info:hover {
-    color:#fff;
+    color:#fff;border-top: 1px solid #ededed;
 }
 
 #itemfiles {
@@ -426,16 +452,28 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     }
 }
 
-.item-pagination {
+.item-pagination, .pagination {
     clear:both;
     border-top: 1px solid #ededed;
     padding-top:10px;
 
-    #previous-item {
+    #previous-item, .pagination_previous {
         float:left;
     }
-    #next-item {
+    #next-item, .pagination_next {
         float:right;
+    }
+
+    .page-input {
+        display:none;
+    }
+}
+
+.customHtml {
+    padding-top:10px;
+    
+    h3, a {
+        color:#fff;
     }
 }
 

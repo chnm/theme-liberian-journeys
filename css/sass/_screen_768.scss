@@ -5,6 +5,10 @@ header, #content, footer {
     @include pad(1);
 }
 
+div, nav {
+    @include pie-clearfix;
+}
+
 #top-nav {
     @include span (8);
 }
@@ -97,6 +101,10 @@ header, #content, footer {
         background:rgba(6,81,128,.75);
         padding:1rem 1.4rem;
     }
+}
+
+.photos .items-list ul {
+    padding:0;
 }
 
 .photos .item-img {

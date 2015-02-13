@@ -27,8 +27,7 @@
 
 
     <!-- JavaScripts -->
-    <?php queue_js_file('vendor/modernizr'); ?>
-    <?php queue_js_file('globals'); ?>
+    <?php queue_js_file(array('vendor/modernizr', 'globals')); ?>
     <?php echo head_js(); ?>
 </head>
 

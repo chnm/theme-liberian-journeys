@@ -37,10 +37,19 @@
 
     <?php
     $pageTitle = __('Browse Photos');
+    queue_js_file('vendor/lightGallery.min');
+    queue_js_string("
+            jQuery(document).ready(function() {
+                jQuery('#lightGallery').lightGallery(); 
+                });
+        ");
+    queue_css_file('lightGallery');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard photos'));
-    queue_js_file('lightbox.min', 'javascripts/vendor');
-    queue_css_file('lightbox');
     ?>
+
+<script type="text/javascript">
+
+</script>
 
     <div class="page-info">
         <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
@@ -56,16 +65,47 @@
     </nav>
 
     <div class="items-list">
+        <ul id="lightGallery">
 
-        <?php foreach (loop('items') as $item): ?>
+            <?php foreach (loop('items') as $item): ?>
 
-            <?php if (metadata('item', 'has files')): ?>
-            <div class="item-img">
-                <?php echo link_to_item(item_image('square_thumbnail')); ?>
-            </div>
-            <?php endif; ?>
+                <?php if (metadata('item', 'has files')): ?>
+                <?php
+                    set_loop_records('files', get_current_record('item')->Files);
+                    foreach(loop('files') as $file): 
+                ?>
+                    <li data-src="<?php echo file_display_url($file, 'fullsize'); ?>" data-sub-html='#html<?php echo metadata('item', 'id'); ?>' class="item-img">
 
-        <?php endforeach; ?>
+                        <?php echo item_image('square_thumbnail'); ?>
+                    </li>
+
+                 <?php endforeach; ?>
+                <?php endif; ?>
+
+            <?php endforeach; ?>
+            
+        </ul>
+
+            <?php foreach (loop('items') as $item): ?>
+
+                <?php if (metadata('item', 'has files')): ?>
+                <?php
+                    set_loop_records('files', get_current_record('item')->Files);
+                    foreach(loop('files') as $file): 
+                ?>
+
+                    <div class="hidden" id="html<?php echo metadata('item', 'id'); ?>">
+                        <div class="customHtml">
+                            <h3><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h3>
+                            <?php echo link_to_item('See Item&rarr;'); ?>
+                        </div>
+                    </div>
+
+                 <?php endforeach; ?>
+                <?php endif; ?>
+
+            <?php endforeach; ?>
+
     </div><!-- items-list-->
 
 <?php elseif($_GET['type'] == 3): ?>
@@ -138,27 +178,27 @@
 
 <?php else: ?>
 
+    <?php
+    $pageTitle = __('Browse Items');
+    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse all'));
+    ?>
+
     <div class="items-list">
 
         <?php foreach (loop('items') as $item): ?>
         <div class="item hentry">
-            <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>
             <div class="item-meta">
             <?php if (metadata('item', 'has files')): ?>
             <div class="item-img">
                 <?php echo link_to_item(item_image('square_thumbnail')); ?>
             </div>
             <?php endif; ?>
+            
+            <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
 
             <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
             <div class="item-description">
                 <?php echo $description; ?>
-            </div>
-            <?php endif; ?>
-
-            <?php if (metadata('item', 'has tags')): ?>
-            <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
-                <?php echo tag_string('items'); ?></p>
             </div>
             <?php endif; ?>
 
