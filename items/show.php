@@ -1,9 +1,9 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
-
+<?php $itemType = metadata('item', 'item_type_name'); ?>
 
 <div id="primary">
     <h2><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h2>
-
+        
     <div class="element">
         <?php echo metadata('item', array('Dublin Core', 'Description')); ?>
     </div>
@@ -28,6 +28,16 @@
             <?php echo metadata('item', array('Dublin Core', 'Subject')); ?>
         </div>     
     </div>
+
+    <?php if($itemType == 'Document' || $itemType == 'Diary'): ?>
+        <?php if (metadata('item', 'has files')): ?>
+            <div id="itemfiles" class="element">
+                <h3><?php echo __('Files'); ?></h3>
+                <div class="element-text"><?php echo files_for_item(); ?></div>
+            </div>
+        <?php endif; ?>
+    <?php endif; ?>
+        
     
     
     <button class="more-info">More information about this item</button>
@@ -44,17 +54,22 @@
 </div> <!-- end primary -->
 
 <div id="secondary">
-
+    
+    <?php $location = get_db()->getTable('Location')->findLocationByItem($item, true); ?>
+    <?php if($location): ?>
     <div class="map-show">
         <?php echo $this->itemGoogleMap($item, $width = '100%', $height = '250px');?>    
     </div>
+    <?php endif; ?>
 
     <!-- The following returns all of the files associated with an item. -->
-    <?php if (metadata('item', 'has files')): ?>
-    <div id="itemfiles" class="element">
-        <h3><?php echo __('Files'); ?></h3>
-        <div class="element-text"><?php echo files_for_item(); ?></div>
-    </div>
+    <?php if($itemType != 'Document' && $itemType != 'Diary'): ?>
+        <?php if (metadata('item', 'has files')): ?>
+            <div id="itemfiles" class="element">
+                <h3><?php echo __('Files'); ?></h3>
+                <div class="element-text"><?php echo files_for_item(); ?></div>
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
 
 </div>
