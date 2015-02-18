@@ -62,7 +62,7 @@ div, nav {
 /* Items Browse */
 
 .page-info {
-    @include span (6);
+    @include span (5);
 }
 
 .stories .page-info {
@@ -70,10 +70,13 @@ div, nav {
 }
 
 .standard .items-nav.secondary-nav {
-    @include span(last 5);
-    @include push(1);
+    @include span(last 7);
+    
+    ul {
+        float:right;
+    }
 
-    ul li {
+    li {
         float:left;
 
         a {

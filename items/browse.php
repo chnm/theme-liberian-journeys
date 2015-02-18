@@ -36,7 +36,7 @@
 <?php elseif($_GET['type'] == 6): ?>
 
     <?php
-    $pageTitle = __('Browse Photos');
+    $pageTitle = __('Browse Photographs');
     queue_js_file('vendor/lightGallery.min');
     queue_js_string("
             jQuery(document).ready(function() {
@@ -58,9 +58,11 @@
 
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Historic Photos</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
-            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Documents</a></li>
+            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
 
@@ -122,9 +124,11 @@
 
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Historic Photos</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
-            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Documents</a></li>
+            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
 
@@ -143,7 +147,7 @@
 <?php elseif($_GET['type'] == 18): ?>
 
     <?php
-    $pageTitle = __('Browse Documents');
+    $pageTitle = __('Browse Diaries');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard documents'));
     ?>
 
@@ -154,9 +158,87 @@
 
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Historic Photos</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
-            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Documents</a></li>
+            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+        </ul>
+    </nav>
+
+    <div class="items-list">
+
+        <?php foreach (loop('items') as $item): ?>
+        <div class="item hentry">
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>20)), array('class'=>'permalink')); ?></h5>
+            <div class="item-meta">
+                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
+                    <div class="item-description">
+                        <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
+                    </div>
+                <?php endif; ?>
+            </div><!-- end class="item-meta" -->
+        </div><!-- end class="item hentry" -->
+        <?php endforeach; ?>
+    </div><!-- items-list-->
+
+<?php elseif($_GET['type'] == 19): ?>
+
+    <?php
+    $pageTitle = __('Browse Letters');
+    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard documents'));
+    ?>
+
+    <div class="page-info">
+        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+    </div>
+
+
+    <nav class="items-nav navigation secondary-nav">
+        <ul>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
+            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+        </ul>
+    </nav>
+
+    <div class="items-list">
+
+        <?php foreach (loop('items') as $item): ?>
+        <div class="item hentry">
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>20)), array('class'=>'permalink')); ?></h5>
+            <div class="item-meta">
+                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
+                    <div class="item-description">
+                        <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
+                    </div>
+                <?php endif; ?>
+            </div><!-- end class="item-meta" -->
+        </div><!-- end class="item hentry" -->
+        <?php endforeach; ?>
+    </div><!-- items-list-->
+
+<?php elseif($_GET['type'] == 4): ?>
+
+    <?php
+    $pageTitle = __('Browse Oral Histories');
+    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard documents'));
+    ?>
+
+    <div class="page-info">
+        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+    </div>
+
+
+    <nav class="items-nav navigation secondary-nav">
+        <ul>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
+            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
 
