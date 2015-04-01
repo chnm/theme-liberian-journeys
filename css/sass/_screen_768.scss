@@ -1,150 +1,160 @@
 /*Header*/
-
-header, #content, footer {
-    @include pie-clearfix;
-    @include pad(1);
-}
-
-div, nav {
-    @include pie-clearfix;
-}
-
 #top-nav {
-    @include span (8);
+    display:none;
 }
 
-#search-container {
-    @include span (last 4);
-}
-
-#site-title {
-    @include span (12);
-}
-
-/* General */
-
-.large-4 {
-    @include span (4);
-}
-
-.large-4.last {
-    @include span (last 4);
-}
-
-/* Home Page */
-
-#home #about {
-    @include span (4);
-}
-
-#home-map {
-    @include span (last 8);
-}
-
-#portals {
+#mobile-nav { 
+    display:block;
     clear:both;
-    @include span (12);
-}
-
-/* Map Page */
-#geolocation-browse {
-    @include span (9);
-
-    #map_browse {
-        width:100%;
-    }
-}
-
-#map-help {
-    @include span (last 3);
-}
-
-/* Items Browse */
-
-.page-info {
-    @include span (5);
-}
-
-.stories .page-info {
-    @include span (9);
-}
-
-.standard .items-nav.secondary-nav {
-    @include span(last 7);
+    @include container;
+    zoom:1;
     
     ul {
-        float:right;
+        position:absolute;
+        z-index:199;
+        background:#fff;
+        border-bottom:1px solid #ccc;
+        width: 83.05084%;
+        padding-left: 0;
+        margin: 0;
     }
 
     li {
-        float:left;
-
-        a {
-            display:block;
-            text-align: center;
-            padding:1rem 1.4rem;
-            background: rgba(0,127,36,.75);
-            color: #fff;
-        }
-
-        a:hover, a.current {
-            background: rgba(0,127,36,1);
-        }
+        text-align:left;
+        display:block;
+        overflow:hidden;
+        width: 100%;
     }
-}
-
-.stories .items-nav.secondary-nav {
-    @include span(last 2);
-    @include push (1);
 
     a {
-        text-align: center;
+        text-decoration:none;
         display:block;
-        color:#fff;
-        background:rgba(6,81,128,.75);
-        padding:1rem 1.4rem;
+        padding: 5px;
+        border:1px solid #ccc;
+        border-width: 1px 1px 0 1px;
+    }
+
+    a:hover { background:#fff; }
+
+    & > a:first-child {
+        background:#fff;
+        cursor: pointer;
+    }
+
+    li.active a {
+        background:#fff;
+        color:#663b29;
+    }
+} 
+
+#search-container {
+    width:100%;
+    float:none;
+    padding-top:10px
+}
+
+#site-title {
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom:25px;
+
+        h1 {
+            font-size:1.75 * $base-font-size;
+            line-height: 1.075 * $base-line-height;
+            display:block;
+            float:left;
+        }
+
+        h4 {
+        font-size: 0.8 * $base-font-size;
+        display:block;
+        clear:both;
+        }
+    
+}
+
+#main > div, #portals > div {
+    width:100% !important;
+}
+
+.overlay {
+    opacity:0.75;
+}
+
+.overlay-text {
+    font-size:2em;
+}
+
+
+
+/* Home Page */
+
+
+
+
+
+/* Items Browse */
+.item-filter {
+    display:none;
+}
+
+.items-list .item-img, .items-list > .item, .items-list .item:nth-child(3n) {
+    width:100%;
+    clear:both;
+    height:auto;
+}
+
+.items-list .item {
+    margin-bottom: 10px;
+}
+
+.mobile-secondary-nav { 
+    display:block;
+    clear:both;
+    @include container;
+    zoom:1;
+    
+    ul {
+        position:absolute;
+        z-index:199;
+        width: 83.05084%;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    li {
+        text-align:left;
+        display:block;
+        overflow:hidden;
+        width: 100%;
+    }
+
+    a {
+        text-decoration:none;
+        display:block;
+        padding:5px;
+        border:1px solid #fff;
+        border-width: 1px 1px 0 1px;
+        color: #fff;
+    }
+
+    & > a:first-child {
+        background:#fafafa;
+        cursor: pointer;
     }
 }
 
-.photos .items-list ul {
-    padding:0;
+.browse.standard .mobile-secondary-nav a {
+    background: rgba(0,127,36,1);      
 }
 
-.photos .item-img {
-    @include span (2);
-    &:nth-child(6n) {
-        @include span(last 2);
-    }
-
-    img {
-        width:100%;
-    }
-}
-
-.films .item-img {
-    @include span (3);
-    &:nth-child(4n) {
-        @include span(last 3);
-    }
-
-    img {
-        width:100%;
-    }
-}
-
-.documents .item, .stories .item {
-    @include span (4);
-    &:nth-child(3n) {
-        @include span(last 4);
-    }
+.browse.stories .mobile-secondary-nav a {
+    background:rgba(6,81,128,1)  
 }
 
 
-/* Simple Pages */
-.simple-page #primary {
-    @include span (9);
+/* Footer */
+footer {
+    padding: 20px;
 }
 
-.simple-page #secondary {
-    @include span (last 3);
-}

@@ -14,6 +14,15 @@ body {
     }
 }
 
+header, #content, footer {
+    @include pie-clearfix;
+    @include pad(1);
+}
+
+div, nav {
+    @include pie-clearfix;
+}
+
 ul {
     margin:0;
 }
@@ -45,6 +54,14 @@ nav ul{
     display: none;
 }
 
+.large-4 {
+    @include span (4);
+}
+
+.large-4.last {
+    @include span (last 4);
+}
+
  h1,  h2,  h3,  h4,  h5,  h6  {
     font-family:'Lato', sans-serif;
     font-weight:normal;
@@ -72,6 +89,22 @@ h5 {
 
 a {
     text-decoration: none;
+}
+
+#top-nav {
+    @include span (8);
+}
+
+#mobile-nav {
+    display:none;
+}
+
+#search-container {
+    @include span (last 4);
+}
+
+#site-title {
+    @include span (12);
 }
 
 #site-title, #site-title a, h1 a, h1 a:hover, h4 a, h4 a:hover {
@@ -287,8 +320,21 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
 /*Home Page*/
 
+#home #about {
+    @include span (4);
+}
+
+#home-map {
+    @include span (last 8);
+}
+
+#portals {
+    clear:both;
+    @include span (12);
+}
+
 .portal-wrap {
-    padding:20px;
+    padding:6%;
     background-color:#ededed;
 
 }
@@ -298,10 +344,11 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }
 
 .portal {
-    width:320px;
-    height:320px;
+    width:100%;
+    height:100%;
     background-size:cover;
     overflow:hidden;
+    margin:0;
 }
 
 .overlay {  
@@ -356,12 +403,91 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }*/
 
 /* Items Browse */
+
 .items-list {
     clear:both;
     padding-top:20px;
 
     ul {
         list-style:none;
+    }
+}
+
+.page-info {
+    @include span (5);
+}
+
+.stories .page-info {
+    @include span (9);
+}
+
+.standard .items-nav.secondary-nav {
+    @include span(last 7);
+    
+    ul {
+        float:right;
+    }
+
+    li {
+        float:left;
+
+        a {
+            display:block;
+            text-align: center;
+            padding:1rem 1.4rem;
+            background: rgba(0,127,36,.75);
+            color: #fff;
+        }
+
+        a:hover, a.current {
+            background: rgba(0,127,36,1);
+        }
+    }
+}
+
+.stories .items-nav.secondary-nav {
+    @include span(last 2);
+    @include push (1);
+
+    a {
+        text-align: center;
+        display:block;
+        color:#fff;
+        background:rgba(6,81,128,.75);
+        padding:1rem 1.4rem;
+    }
+}
+
+.photos .items-list ul {
+    padding:0;
+}
+
+.photos .item-img {
+    @include span (2);
+    &:nth-child(6n) {
+        @include span(last 2);
+    }
+
+    img {
+        width:100%;
+    }
+}
+
+.films .item-img {
+    @include span (3);
+    &:nth-child(4n) {
+        @include span(last 3);
+    }
+
+    img {
+        width:100%;
+    }
+}
+
+.documents .item, .stories .item {
+    @include span (4);
+    &:nth-child(3n) {
+        @include span(last 4);
     }
 }
 
@@ -593,6 +719,28 @@ div#panel3 > div > div {
     padding:20px;
 }
 
+/* Map Page */
+#geolocation-browse {
+    @include span (9);
+
+    #map_browse {
+        width:100%;
+    }
+}
+
+#map-help {
+    @include span (last 3);
+}
+
+
+/* Simple Pages */
+.simple-page #primary {
+    @include span (9);
+}
+
+.simple-page #secondary {
+    @include span (last 3);
+}
 
 
 

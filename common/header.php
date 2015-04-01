@@ -54,6 +54,22 @@
                ?>
             </nav>
 
+            <div id="mobile-nav">
+                <?php 
+                $navArray = array();
+                $navArray[] = array('label' => 'Map', 'uri' => url('geolocation/map/browse'), 'class' => 'map');
+                $navArray[] = array('label' => 'Exhibits', 'uri' => url('exhibits'), 'class' => 'exhibits');
+                $navArray[] = array('label' => 'Collections', 'uri' => url('items/browse?type=6'), 'class' => 'collections');
+                $navArray[] = array('label' => 'Stories', 'uri' => url('items/browse?contributed=1'), 'class' => 'stories');
+                $navArray[] = array('label' => 'Share', 'uri' => url('contribution'), 'class' => 'share');
+                $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about');
+                ?>
+               <?php
+                    echo nav($navArray)->addPageClassToLi();
+               ?>
+                
+            </div>
+
             <div id="search-container">
                 <?php echo search_form(); ?>
             </div>
