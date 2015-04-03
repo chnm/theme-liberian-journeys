@@ -48,7 +48,7 @@
 <?php elseif($_GET['type'] == 6): ?>
 
     <?php
-    $pageTitle = __('Browse Photographs');
+    $pageTitle = __('Browse Images');
     queue_js_file('vendor/lightGallery.min');
     queue_js_string("
             jQuery(document).ready(function() {
@@ -68,29 +68,36 @@
     </div>
 
     <div class="item-filter">
-    <nav class="items-nav navigation secondary-nav">
-        <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
-            <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
-            <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
-        </ul>
-    </nav>      
+        <nav class="items-nav navigation secondary-nav">
+            <ul>
+                <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
+                <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
+                <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
+                <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
+                <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            </ul>
+        </nav>     
     </div>
     
     
     <div class="mobile-secondary-nav">
     <nav>
         <ul class="navigation">
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
-        
+    </div>
+
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
     
 
@@ -152,10 +159,10 @@
     <div class="item-filter">
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>      
@@ -164,13 +171,21 @@
     <div class="mobile-secondary-nav">
     <nav>
         <ul class="navigation">
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav> 
+    </div>
+
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
     <div class="items-list">
@@ -200,10 +215,10 @@
     <div class="item-filter">
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>      
@@ -212,13 +227,21 @@
     <div class="mobile-secondary-nav">
     <nav>
         <ul class="navigation">
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
+    </div>
+
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
     <div class="items-list">
@@ -237,10 +260,10 @@
         <?php endforeach; ?>
     </div><!-- items-list-->
 
-<?php elseif($_GET['type'] == 19): ?>
+<?php elseif($_GET['type'] == 1): ?>
 
     <?php
-    $pageTitle = __('Browse Letters');
+    $pageTitle = __('Browse Documents');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard documents'));
     ?>
 
@@ -252,10 +275,10 @@
     <div class="item-filter">
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>      
@@ -264,13 +287,21 @@
     <div class="mobile-secondary-nav">
     <nav>
         <ul class="navigation">
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
+    </div>
+
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
     <div class="items-list">
@@ -304,10 +335,10 @@
     <div class="item-filter">
     <nav class="items-nav navigation secondary-nav">
         <ul>
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Letters</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>      
@@ -316,13 +347,21 @@
     <div class="mobile-secondary-nav">
     <nav>
         <ul class="navigation">
-            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Photographs</a></li>
+            <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=19'); ?>" <?php if($_GET['type'] == 19) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
         </ul>
     </nav>
+    </div>
+
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
     <div class="items-list">
