@@ -1318,7 +1318,7 @@ th {
     background: rgba(0, 0, 0, 0.75);
     text-align: center;
     padding: 140px 0;
-    opacity: 0;
+    opacity: 0.5;
     -webkit-transition: opacity .25s ease;
     -moz-transition: opacity .25s ease;
   }
@@ -1952,11 +1952,6 @@ th {
   /* line 80, sass/_screen_768.scss */
   .overlay {
     opacity: 0.75;
-  }
-
-  /* line 84, sass/_screen_768.scss */
-  .overlay-text {
-    font-size: 2em;
   }
 
   /* Home Page */
