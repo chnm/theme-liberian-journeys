@@ -8,22 +8,28 @@
     <div class="page-info">
         <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
     </div>
-    
-    <div class="item-filter">
-    <nav class="items-nav navigation secondary-nav">
-        <a href="#">Themes</a>
-    </nav>
-    </div>
 
-    <div class="mobile-secondary-nav">
-    <nav>
-        <ul class="navigation">
-            <li><a>Theme 1</a></li>
-            <li><a>Theme 2</a></li>
-        </ul>
-    </nav>
+    <?php
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
+        $sortLinks[__('Date')] = 'Dublin Core, Date';
+    ?>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
     
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
+    </div>
 
     <div class="items-list">
 
@@ -99,6 +105,23 @@
     <div id="sort-links">
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
+
+    
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
+    </div>
+
+
     
 
     <div class="items-list">
@@ -188,6 +211,20 @@
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
+    </div>
+
     <div class="items-list">
 
         <?php foreach (loop('items') as $item): ?>
@@ -242,6 +279,20 @@
     ?>
     <div id="sort-links">
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+    </div>
+
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
     </div>
 
     <div class="items-list">
@@ -304,6 +355,20 @@
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
+    </div>
+
     <div class="items-list">
 
         <?php foreach (loop('items') as $item): ?>
@@ -362,6 +427,20 @@
     ?>
     <div id="sort-links">
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+    </div>
+
+    <div class="item-themes">
+        <?php $tags = get_records('Tag', array('sort_field' => 'name'), 0); ?>
+
+        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+            <input type="hidden" name="type" value="<?php echo htmlspecialchars($_GET['type']); ?>">
+            <select name="tag" onchange="this.form.submit()">
+                <option value="">Themes</option>
+                <?php foreach ($tags as $tag): ?>
+                    <option value="<?php echo $tag; ?>"><?php echo $tag; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </form>
     </div>
 
     <div class="items-list">

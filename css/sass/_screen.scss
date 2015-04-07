@@ -418,7 +418,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }
 
 .stories .page-info {
-    @include span (9);
+    @include span (7);
 }
 
 .standard .items-nav.secondary-nav {
@@ -448,6 +448,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 #sort-links {
     float:right;
     display: block;
+    margin-left:3em;
 
     .sort-label {
         display: inline-block;
@@ -455,7 +456,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
     #sort-links-list {
           display: inline-block;
-          margin: 0.75em 0 0.75em 3px;
+          margin-left: 3px;
     }
 
     ul {
@@ -490,16 +491,20 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     }
 }
 
-.stories .items-nav.secondary-nav {
+.item-themes {
     @include span(last 2);
     @include push (1);
 
-    a {
+    form, select {
+        max-width: 100%;
+    }
+
+    select {
         text-align: center;
         display:block;
-        color:#fff;
-        background:rgba(6,81,128,.75);
-        padding:1rem 1.4rem;
+        // color:#fff;
+        // background:rgba(6,81,128,.75);
+        // padding:.75rem 1rem;
     }
 }
 
