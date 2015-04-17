@@ -80,7 +80,7 @@
                 <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
                 <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
                 <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-                <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+                <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
             </ul>
         </nav>     
     </div>
@@ -93,7 +93,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>
     </div>
@@ -186,7 +186,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>      
     </div>
@@ -198,7 +198,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav> 
     </div>
@@ -256,7 +256,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>      
     </div>
@@ -268,7 +268,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>
     </div>
@@ -330,7 +330,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>      
     </div>
@@ -342,7 +342,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>
     </div>
@@ -388,7 +388,7 @@
 <?php elseif($_GET['type'] == 4): ?>
 
     <?php
-    $pageTitle = __('Browse Oral Histories');
+    $pageTitle = __('Browse Stories');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse standard documents'));
     ?>
 
@@ -404,7 +404,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Letters</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>      
     </div>
@@ -416,7 +416,7 @@
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
             <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
-            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Oral Histories</a></li>
+            <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>
     </div>
