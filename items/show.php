@@ -29,20 +29,24 @@
 
 <div id="secondary">
 
+<?php $locations = metadata('item', array('Dublin Core', 'Coverage'), 'all');?>
+<?php if($locations): ?>
 <div class="locations">
     <h3>Locations</h3>
-    <?php $locations = metadata('item', array('Dublin Core', 'Coverage'), 'all');?>
     <ul>
     <?php foreach ($locations as $location): ?>
         <li><?php echo $location; ?></li>
     <?php endforeach; ?>
     </ul>
 </div><!-- end locations -->
+<?php endif; ?>
 
+<?php if (metadata('item', 'has tags')): ?>
 <div class="themes">
     <h3>Themes</h3>
     <?php echo tag_string('item'); ?>
 </div>
+<?php endif; ?>
 
 </div><!-- end secondary -->
 
