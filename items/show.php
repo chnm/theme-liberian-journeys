@@ -6,7 +6,6 @@
 
     <?php if (metadata('item', 'has files')): ?>
         <div id="itemfiles" class="element">
-            <h3><?php echo __('Files'); ?></h3>
             <div class="element-text"><?php echo files_for_item(array('imageSize' => 'fullsize')); ?></div>
         </div>
     <?php endif; ?>
@@ -29,7 +28,23 @@
 </div> <!-- end primary -->
 
 <div id="secondary">
+
+<div class="locations">
+    <h3>Locations</h3>
+    <?php $locations = metadata('item', array('Dublin Core', 'Coverage'), 'all');?>
+    <ul>
+    <?php foreach ($locations as $location): ?>
+        <li><?php echo $location; ?></li>
+    <?php endforeach; ?>
+    </ul>
+</div><!-- end locations -->
+
+<div class="themes">
+    <h3>Themes</h3>
+    <?php echo tag_string('item'); ?>
 </div>
+
+</div><!-- end secondary -->
 
 <nav>
 <ul class="item-pagination navigation">
