@@ -1867,17 +1867,18 @@ th {
   /* line 817, sass/_screen.scss */
   footer {
     margin-top: 20px;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #f1f1f2;
     box-shadow: 0px 500px 0px 500px #f1f1f2;
   }
 
-  /* line 824, sass/_screen.scss */
+  /* line 825, sass/_screen.scss */
   footer ul {
     float: right;
   }
 
-  /* line 826, sass/_screen.scss */
+  /* line 827, sass/_screen.scss */
   footer ul li {
     display: inline-block;
     float: left;
