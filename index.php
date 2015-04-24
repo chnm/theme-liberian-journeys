@@ -29,7 +29,7 @@ echo head(array('bodyid'=>'home'));
       <div id="collections-portal-wrap" class="portal-wrap">
         <div id="collections-portal" class="portal">
           <div id="collections-portal-overlay" class="overlay">
-            <a href="<?php echo url('collections'); ?>"><span class="overlay-text" id="collections-link">collections</span></a>
+            <a href="<?php echo url('items/browse?type=6'); ?>"><span class="overlay-text" id="collections-link">collections</span></a>
           </div>
         </div>
       </div>        
@@ -39,7 +39,7 @@ echo head(array('bodyid'=>'home'));
       <div id="stories-portal-wrap" class="portal-wrap last">
         <div id="stories-portal" class="portal">
           <div id="stories-portal-overlay" class="overlay">
-            <a href="stories.php"><span class="overlay-text" id="stories-link">stories</span></a>
+            <a href="<?php echo url('contribution'); ?>"><span class="overlay-text" id="stories-link">share</span></a>
           </div>
         </div>
       </div>
