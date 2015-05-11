@@ -130,16 +130,12 @@
             <?php foreach (loop('items') as $item): ?>
 
                 <?php if (metadata('item', 'has files')): ?>
-                <?php
-                    set_loop_records('files', get_current_record('item')->Files);
-                    foreach(loop('files') as $file): 
-                ?>
+                <?php $file = $item->getFile(); ?>
                     <li data-src="<?php echo file_display_url($file, 'fullsize'); ?>" data-sub-html='#html<?php echo metadata('item', 'id'); ?>' class="item-img">
 
                         <?php echo item_image('square_thumbnail'); ?>
                     </li>
 
-                 <?php endforeach; ?>
                 <?php endif; ?>
 
             <?php endforeach; ?>
