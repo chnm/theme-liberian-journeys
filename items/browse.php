@@ -399,7 +399,7 @@
             <li><a href="<?php echo url('items/browse/?type=6'); ?>" <?php if($_GET['type'] == 6) echo ' class=current';?>>Images</a></li>
             <li><a href="<?php echo url('items/browse/?type=3'); ?>" <?php if($_GET['type'] == 3) echo ' class=current';?>>Historic Film</a></li>
             <li><a href="<?php echo url('items/browse/?type=18'); ?>" <?php if($_GET['type'] == 18) echo ' class=current';?>>Diaries</a></li>
-            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Letters</a></li>
+            <li><a href="<?php echo url('items/browse/?type=1'); ?>" <?php if($_GET['type'] == 1) echo ' class=current';?>>Documents</a></li>
             <li><a href="<?php echo url('items/browse/?type=4'); ?>" <?php if($_GET['type'] == 4) echo ' class=current';?>>Stories</a></li>
         </ul>
     </nav>      
