@@ -535,12 +535,12 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     }
 }
 
-.documents .item, .stories .item {
-    @include span (4);
-    &:nth-child(3n) {
-        @include span(last 4);
-    }
-}
+// .documents .item, .stories .item {
+//     @include span (4);
+//     &:nth-child(3n) {
+//         @include span(last 4);
+//     }
+// }
 
 #outputs {
     clear:both;
@@ -551,9 +551,9 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
 .documents .item, .stories .item {
     border:2px solid #f1f1f2;
-    height:200px;
     margin-bottom:1rem;
     padding:10px;
+    background:#FCFCFD;
 
     h5 {
         margin-bottom:0.5rem;

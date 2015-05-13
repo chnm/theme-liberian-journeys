@@ -1528,19 +1528,6 @@ th {
     width: 100%;
   }
 
-  /* line 538, sass/_screen.scss */
-  .documents .item, .stories .item {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-  /* line 540, sass/_screen.scss */
-  .documents .item:nth-child(3n), .stories .item:nth-child(3n) {
-    width: 32.20339%;
-    float: right;
-    margin-right: 0;
-  }
-
   /* line 545, sass/_screen.scss */
   #outputs {
     clear: both;
@@ -1552,9 +1539,9 @@ th {
   /* line 552, sass/_screen.scss */
   .documents .item, .stories .item {
     border: 2px solid #f1f1f2;
-    height: 200px;
     margin-bottom: 1rem;
     padding: 10px;
+    background: #FCFCFD;
   }
   /* line 558, sass/_screen.scss */
   .documents .item h5, .stories .item h5 {
