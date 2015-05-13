@@ -129,7 +129,7 @@
 
             <?php foreach (loop('items') as $item): ?>
 
-                <?php if (metadata('item', 'has files')): ?>
+                <?php if (metadata('item', 'has_thumbnail')): ?>
                 <?php $file = $item->getFile(); ?>
                     <li data-src="<?php echo file_display_url($file, 'fullsize'); ?>" data-sub-html='#html<?php echo metadata('item', 'id'); ?>' class="item-img">
 
@@ -301,9 +301,9 @@
                         <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
                     </div>
                 <?php endif; ?>
-                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
+                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>500))): ?>
                     <div class="item-description">
-                        <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
+                        <?php echo $description; ?>&nbsp;&nbsp;<?php echo link_to_item('Read more&rarr;'); ?>
                     </div>
                 <?php endif; ?>
             </div><!-- end class="item-meta" -->
@@ -379,15 +379,21 @@
                         <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
                     </div>
                 <?php endif; ?>
-                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
+                <?php if (metadata('item', 'has_thumbnail')): ?>
+                    <div class="item-thumb">
+                        <?php echo item_image('square_thumbnail'); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>500))): ?>
                     <div class="item-description">
-                        <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
+                        <?php echo $description; ?>&nbsp;&nbsp;<?php echo link_to_item('Read more&rarr;'); ?>
                     </div>
                 <?php endif; ?>
             </div><!-- end class="item-meta" -->
         </div><!-- end class="item hentry" -->
         <?php endforeach; ?>
     </div><!-- items-list-->
+
 
 <?php elseif($_GET['type'] == 4): ?>
 
@@ -457,9 +463,9 @@
                         <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
                     </div>
                 <?php endif; ?>
-                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
+                <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>500))): ?>
                     <div class="item-description">
-                        <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
+                        <?php echo $description; ?>&nbsp;&nbsp;<?php echo link_to_item('Read more&rarr;'); ?>
                     </div>
                 <?php endif; ?>
             </div><!-- end class="item-meta" -->

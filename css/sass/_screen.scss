@@ -558,6 +558,12 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     h5 {
         margin-bottom:0.5rem;
     }
+
+    .item-thumb {
+        display: block;
+        float: left;
+        margin-right:10px;
+    }
 }
 
 .items.browse.all .hentry {
