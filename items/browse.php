@@ -292,11 +292,15 @@
     </div>
 
     <div class="items-list">
-
         <?php foreach (loop('items') as $item): ?>
         <div class="item hentry">
-        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>20)), array('class'=>'permalink')); ?></h5>
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
+                <?php if(metadata('item', array('Dublin Core', 'Date'))): ?>
+                    <div class="item-date">
+                        <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
+                    </div>
+                <?php endif; ?>
                 <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
                     <div class="item-description">
                         <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
@@ -366,11 +370,15 @@
     </div>
 
     <div class="items-list">
-
         <?php foreach (loop('items') as $item): ?>
         <div class="item hentry">
-        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>20)), array('class'=>'permalink')); ?></h5>
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
+                <?php if(metadata('item', array('Dublin Core', 'Date'))): ?>
+                    <div class="item-date">
+                        <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
+                    </div>
+                <?php endif; ?>
                 <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
                     <div class="item-description">
                         <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
@@ -440,11 +448,15 @@
     </div>
 
     <div class="items-list">
-
         <?php foreach (loop('items') as $item): ?>
         <div class="item hentry">
-        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>20)), array('class'=>'permalink')); ?></h5>
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
+                <?php if(metadata('item', array('Dublin Core', 'Date'))): ?>
+                    <div class="item-date">
+                        <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
+                    </div>
+                <?php endif; ?>
                 <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>200))): ?>
                     <div class="item-description">
                         <?php echo $description; ?><?php echo link_to_item('Read more&rarr;'); ?>
