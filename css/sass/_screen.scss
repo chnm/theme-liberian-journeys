@@ -326,6 +326,10 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
 #home-map {
     @include span (last 8);
+
+    img {
+        width:100%;
+    }
 }
 
 #portals {

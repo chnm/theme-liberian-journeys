@@ -10,7 +10,7 @@ echo head(array('bodyid'=>'home'));
 </div>
 
 <div id="home-map">
-    <?php echo $this->googleMap('map_browse', array('loadKml'=>true), array('style' => 'height:495px;width:100%'));?>
+    <a href="<?php echo url('map'); ?>"><img src="<?php echo img('liberia-map.png'); ?>"></a>
 </div>
 
 <div id="portals">
