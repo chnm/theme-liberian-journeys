@@ -106,6 +106,10 @@
 
 .items-list .item {
     margin-bottom: 10px;
+
+    .item-desciption {
+        clear:left;
+    }
 }
 
 .mobile-secondary-nav { 

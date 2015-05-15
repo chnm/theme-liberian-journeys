@@ -2005,8 +2005,12 @@ th {
   .items-list .item {
     margin-bottom: 10px;
   }
+  /* line 110, sass/_screen_768.scss */
+  .items-list .item .item-desciption {
+    clear: left;
+  }
 
-  /* line 111, sass/_screen_768.scss */
+  /* line 115, sass/_screen_768.scss */
   .mobile-secondary-nav {
     display: block;
     clear: both;
@@ -2021,7 +2025,7 @@ th {
     display: block;
     clear: both;
   }
-  /* line 117, sass/_screen_768.scss */
+  /* line 121, sass/_screen_768.scss */
   .mobile-secondary-nav ul {
     position: absolute;
     z-index: 199;
@@ -2029,14 +2033,14 @@ th {
     padding-left: 0;
     margin: 0;
   }
-  /* line 125, sass/_screen_768.scss */
+  /* line 129, sass/_screen_768.scss */
   .mobile-secondary-nav li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 132, sass/_screen_768.scss */
+  /* line 136, sass/_screen_768.scss */
   .mobile-secondary-nav a {
     text-decoration: none;
     display: block;
@@ -2045,24 +2049,24 @@ th {
     border-width: 1px 1px 0 1px;
     color: #fff;
   }
-  /* line 141, sass/_screen_768.scss */
+  /* line 145, sass/_screen_768.scss */
   .mobile-secondary-nav > a:first-child {
     background: #fafafa;
     cursor: pointer;
   }
 
-  /* line 147, sass/_screen_768.scss */
+  /* line 151, sass/_screen_768.scss */
   .browse.standard .mobile-secondary-nav a {
     background: #007f24;
   }
 
-  /* line 151, sass/_screen_768.scss */
+  /* line 155, sass/_screen_768.scss */
   .browse.stories .mobile-secondary-nav a {
     background: #065180;
   }
 
   /* Footer */
-  /* line 157, sass/_screen_768.scss */
+  /* line 161, sass/_screen_768.scss */
   footer {
     padding: 20px;
   }
