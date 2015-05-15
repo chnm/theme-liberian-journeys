@@ -1541,18 +1541,18 @@ th {
   }
 
   /* line 556, sass/_screen.scss */
-  .documents .item, .stories .item {
+  .documents .item, .stories .item, .search .item {
     border: 2px solid #f1f1f2;
     margin-bottom: 1rem;
     padding: 10px;
     background: #FCFCFD;
   }
   /* line 562, sass/_screen.scss */
-  .documents .item h5, .stories .item h5 {
+  .documents .item h5, .stories .item h5, .search .item h5 {
     margin-bottom: 0.5rem;
   }
   /* line 566, sass/_screen.scss */
-  .documents .item .item-thumb, .stories .item .item-thumb {
+  .documents .item .item-thumb, .stories .item .item-thumb, .search .item .item-thumb {
     display: block;
     float: left;
     margin-right: 10px;
@@ -1725,39 +1725,45 @@ th {
     margin: 0;
   }
 
+  /* Search */
+  /* line 718, sass/_screen.scss */
+  .search #main #search-filters {
+    display: none;
+  }
+
   /* Exhibits */
-  /* line 717, sass/_screen.scss */
+  /* line 728, sass/_screen.scss */
   .item-entry {
     margin: 0 1em 1em 0;
   }
 
-  /* line 721, sass/_screen.scss */
+  /* line 732, sass/_screen.scss */
   div.exhibit {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     margin-bottom: 20px;
   }
-  /* line 723, sass/_screen.scss */
+  /* line 734, sass/_screen.scss */
   div.exhibit:nth-child(3n) {
     width: 32.20339%;
     float: right;
     margin-right: 0;
   }
-  /* line 728, sass/_screen.scss */
+  /* line 739, sass/_screen.scss */
   div.exhibit .exhibit-image {
     width: 100%;
     min-height: 300px;
     background-size: cover;
     overflow: hidden;
   }
-  /* line 734, sass/_screen.scss */
+  /* line 745, sass/_screen.scss */
   div.exhibit .exhibit-image a {
     display: block;
     height: 300px;
     width: 100%;
   }
-  /* line 741, sass/_screen.scss */
+  /* line 752, sass/_screen.scss */
   div.exhibit .exhibit-text {
     border-bottom: 2px solid #f1f1f2;
     border-left: 2px solid #f1f1f2;
@@ -1765,61 +1771,61 @@ th {
     padding: 0 0.625rem 1.25rem;
     display: block;
   }
-  /* line 748, sass/_screen.scss */
+  /* line 759, sass/_screen.scss */
   div.exhibit .exhibit-text h2 {
     font-size: 18px;
     padding-top: 5px;
   }
 
-  /* line 756, sass/_screen.scss */
+  /* line 767, sass/_screen.scss */
   .exhibit-page .small-block-grid-3 > li {
     width: 32%;
     padding: 0;
   }
 
-  /* line 761, sass/_screen.scss */
+  /* line 772, sass/_screen.scss */
   .collections-page .tabs-content {
     clear: both;
     margin-top: 1rem;
   }
 
-  /* line 766, sass/_screen.scss */
+  /* line 777, sass/_screen.scss */
   div#panel3 > div > div {
     border: 2px solid #f1f1f2;
   }
 
-  /* line 770, sass/_screen.scss */
+  /* line 781, sass/_screen.scss */
   .tabs dd.active > a {
     background: #007f24;
   }
 
-  /* line 774, sass/_screen.scss */
+  /* line 785, sass/_screen.scss */
   .tabs dd > a {
     background: rgba(0, 127, 36, 0.75);
     color: #fff;
   }
 
-  /* line 779, sass/_screen.scss */
+  /* line 790, sass/_screen.scss */
   .tabs dd > a:hover {
     background: #007f24;
   }
 
-  /* line 783, sass/_screen.scss */
+  /* line 794, sass/_screen.scss */
   .stories-page #filter .button {
     background: rgba(6, 81, 128, 0.75);
   }
 
-  /* line 786, sass/_screen.scss */
+  /* line 797, sass/_screen.scss */
   .stories-page #filter .button:hover {
     background: #065180;
   }
 
-  /* line 790, sass/_screen.scss */
+  /* line 801, sass/_screen.scss */
   .stories-page div.items > div > div {
     border: 2px solid #f1f1f2;
   }
 
-  /* line 794, sass/_screen.scss */
+  /* line 805, sass/_screen.scss */
   .clearing-thumbs li, [data-clearing] li {
     margin-right: 0;
     background: #ededed;
@@ -1827,18 +1833,18 @@ th {
   }
 
   /* Map Page */
-  /* line 801, sass/_screen.scss */
+  /* line 812, sass/_screen.scss */
   #geolocation-browse {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 804, sass/_screen.scss */
+  /* line 815, sass/_screen.scss */
   #geolocation-browse #map_browse {
     width: 100%;
   }
 
-  /* line 809, sass/_screen.scss */
+  /* line 820, sass/_screen.scss */
   #map-help {
     width: 23.72881%;
     float: right;
@@ -1846,14 +1852,14 @@ th {
   }
 
   /* Simple Pages */
-  /* line 815, sass/_screen.scss */
+  /* line 826, sass/_screen.scss */
   .simple-page #primary {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 819, sass/_screen.scss */
+  /* line 830, sass/_screen.scss */
   .simple-page #secondary {
     width: 23.72881%;
     float: right;
@@ -1861,7 +1867,7 @@ th {
   }
 
   /* Footer */
-  /* line 827, sass/_screen.scss */
+  /* line 838, sass/_screen.scss */
   footer {
     margin-top: 20px;
     padding-top: 20px;
@@ -1870,12 +1876,12 @@ th {
     box-shadow: 0px 500px 0px 500px #f1f1f2;
   }
 
-  /* line 835, sass/_screen.scss */
+  /* line 846, sass/_screen.scss */
   footer ul {
     float: right;
   }
 
-  /* line 837, sass/_screen.scss */
+  /* line 848, sass/_screen.scss */
   footer ul li {
     display: inline-block;
     float: left;

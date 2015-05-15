@@ -553,7 +553,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     border-top: 1px solid #ededed;
 }
 
-.documents .item, .stories .item {
+.documents .item, .stories .item, .search .item {
     border:2px solid #f1f1f2;
     margin-bottom:1rem;
     padding:10px;
@@ -710,6 +710,17 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 .item-entry p {
     margin:0;
 }
+
+/* Search */
+
+.search {
+    #main {
+        #search-filters {
+            display:none
+        }
+    }
+}
+
 
 /* Exhibits */
 

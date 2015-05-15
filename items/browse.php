@@ -484,14 +484,13 @@
 
         <?php foreach (loop('items') as $item): ?>
         <div class="item hentry">
+        <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
             <?php if (metadata('item', 'has files')): ?>
             <div class="item-img">
                 <?php echo link_to_item(item_image('square_thumbnail')); ?>
             </div>
             <?php endif; ?>
-            
-            <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
 
             <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
             <div class="item-description">

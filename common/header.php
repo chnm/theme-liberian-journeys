@@ -72,7 +72,10 @@
             </div>
 
             <div id="search-container">
-                <?php echo search_form(); ?>
+                <form id="search-form" action="<?php echo url('/items/browse'); ?>" method="GET">
+                <input type="text" name="search" id="search" value="" title="Search" placeholder="Search the archive...">
+                <button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>    
+                </form>
             </div>
 
         </header>
