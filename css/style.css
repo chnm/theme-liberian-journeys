@@ -1995,7 +1995,7 @@ th {
   }
 
   /* line 101, sass/_screen_768.scss */
-  .items-list .item-img, .items-list > .item, .items-list .item:nth-child(3n) {
+  .items-list .item-img, .items-list .item-img:nth-child(6n), .items-list > .item, .items-list .item:nth-child(3n) {
     width: 100%;
     clear: both;
     height: auto;
