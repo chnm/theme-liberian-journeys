@@ -2014,7 +2014,7 @@ th {
   }
 
   /* line 110, sass/_screen_768.scss */
-  .items-list .item-img, .items-list .item-img img, .items-list .item-img:nth-child(6n), .items-list > .item, .items-list .item:nth-child(3n), .item-themes, .item-themes select, #sort-links {
+  .items-list .item-img, .items-list .item-img img, .items-list .item-img:nth-child(6n), .items-list > .item, .items-list .item:nth-child(3n), .films .item-img:nth-child(4n), .item-themes, .item-themes select, #sort-links {
     width: 100%;
     clear: both;
     height: auto;
