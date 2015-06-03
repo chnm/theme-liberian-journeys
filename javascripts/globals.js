@@ -5,7 +5,7 @@ if (!Omeka) {
 (function ($) {    
     $(function(){
         var dropdownMenu = $('#mobile-nav');
-        dropdownMenu.prepend('<a class="menu">Menu</a>');
+        dropdownMenu.prepend('<a class="menu">Menu <span class="arrow">&#9660;</span></a>');
         //Hide the rest of the menu
         $('#mobile-nav .navigation').hide();
 
@@ -25,7 +25,7 @@ if (!Omeka) {
 
     $(function(){
         var dropdownMenu = $('.mobile-secondary-nav');
-        dropdownMenu.prepend('<a class="second-menu">Filter Items</a>');
+        dropdownMenu.prepend('<a class="second-menu">Collections <span class="arrow">&#9660;</span></a>');
         //Hide the rest of the menu
         $('.mobile-secondary-nav .navigation').hide();
 

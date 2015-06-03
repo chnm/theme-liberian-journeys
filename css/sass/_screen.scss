@@ -420,6 +420,10 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 
 .page-info {
     @include span (5);
+
+    h3 {
+        display: none;
+    }
 }
 
 .stories .page-info {
@@ -427,8 +431,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }
 
 .standard .items-nav.secondary-nav {
-    @include span(last 7);
-    
+
     ul {
         float:right;
     }
@@ -450,10 +453,14 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     }
 }
 
+.item-filter {
+    @include span (7 last);
+} 
+
 #sort-links {
-    float:right;
-    display: block;
-    margin-left:3em;
+    @include span (last 3 break);
+    margin-top:1em;
+    text-align: right;
 
     .sort-label {
         display: inline-block;
@@ -497,8 +504,8 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
 }
 
 .item-themes {
-    @include span(last 2);
-    @include push (1);
+    @include span(last 4);
+    margin-top:.5rem;
 
     form, select {
         max-width: 100%;
