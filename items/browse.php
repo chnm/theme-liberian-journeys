@@ -71,7 +71,7 @@
     </div>
 
     <?php echo print_secondary_nav(); ?>
-    
+
     <div class="items-list">
         <ul id="lightGallery">
 
@@ -197,7 +197,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if (metadata('item', 'has_thumbnail')): ?>
-                    <div class="item-thumb">
+                    <div class="item-img">
                         <?php echo item_image('square_thumbnail'); ?>
                     </div>
                 <?php endif; ?>
