@@ -10,7 +10,8 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
     <?php $exhibitCount++; ?>
     <div class="exhibit <?php if ($exhibitCount%2==1) echo ' even'; else echo ' odd'; ?>">
         <?php $file = $exhibit->getFile(); ?>
-        <?php if ($exhibitImage = metadata($file, 'fullsize_uri')): ?>
+        <?php if ($file): ?>
+        <?php $exhibitImage = metadata($file, 'fullsize_uri'); ?>
             <div class="exhibit-image" style="background-image:url(<?php echo $exhibitImage; ?>)"> <?php echo exhibit_builder_link_to_exhibit($exhibit,$text = ' '); ?></div>
         <?php endif; ?>
         
