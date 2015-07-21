@@ -4,7 +4,6 @@ echo head(array('bodyid'=>'home'));
 
 <div id="about">
     <?php if (get_theme_option('Homepage Text')): ?>
-        <h3>About</h3>
         <p><?php echo get_theme_option('Homepage Text'); ?></p>
     <?php endif; ?>   
 </div>
