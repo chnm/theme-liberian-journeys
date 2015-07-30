@@ -17,6 +17,30 @@
     <button class="more-info">More information about this item</button>
     <div id="secondary-metadata">
 
+        <div class="element">
+            <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
+        </div>
+
+        <div class="element">
+            <?php echo metadata('item', array('Dublin Core', 'Date')); ?>
+        </div>
+
+        <div class="element">
+            <?php echo metadata('item', array('Dublin Core', 'Coverage')); ?>
+        </div>
+
+        <div class="element">
+            <?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?>
+        </div>
+
+        <div class="element">
+            <?php echo metadata('item', array('Dublin Core', 'Type')); ?>
+        </div>
+
+        <div class="element">
+            <?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>
+        </div>
+
         <?php echo all_element_texts('item'); ?>
         <!-- The following prints a citation for this item. -->
         <div id="item-citation" class="element">
