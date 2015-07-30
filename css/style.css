@@ -2075,7 +2075,16 @@ th {
     clear: left;
   }
 
-  /* line 124, sass/_screen_768.scss */
+  /* line 125, sass/_screen_768.scss */
+  .documents .item .item-img, .stories .item .item-img, .search .item .item-img, .browse.all .item .item-img {
+    width: 100%;
+  }
+  /* line 128, sass/_screen_768.scss */
+  .documents .item .item-img img, .stories .item .item-img img, .search .item .item-img img, .browse.all .item .item-img img {
+    width: 100%;
+  }
+
+  /* line 134, sass/_screen_768.scss */
   .mobile-secondary-nav {
     display: block;
     clear: both;
@@ -2089,20 +2098,20 @@ th {
     display: block;
     clear: both;
   }
-  /* line 130, sass/_screen_768.scss */
+  /* line 140, sass/_screen_768.scss */
   .mobile-secondary-nav ul {
     width: 100%;
     padding-left: 0;
     margin: 0;
   }
-  /* line 139, sass/_screen_768.scss */
+  /* line 149, sass/_screen_768.scss */
   .mobile-secondary-nav li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 146, sass/_screen_768.scss */
+  /* line 156, sass/_screen_768.scss */
   .mobile-secondary-nav a {
     text-decoration: none;
     display: block;
@@ -2111,34 +2120,34 @@ th {
     border-width: 1px 1px 0 1px;
     color: #fff;
   }
-  /* line 155, sass/_screen_768.scss */
+  /* line 165, sass/_screen_768.scss */
   .mobile-secondary-nav > a:first-child {
     background: #fafafa;
     cursor: pointer;
   }
 
-  /* line 161, sass/_screen_768.scss */
+  /* line 171, sass/_screen_768.scss */
   .browse.standard .mobile-secondary-nav a {
     background: rgba(0, 127, 36, 0.75);
   }
 
-  /* line 165, sass/_screen_768.scss */
+  /* line 175, sass/_screen_768.scss */
   .browse.standard .mobile-secondary-nav a.current {
     background: #007f24;
   }
 
-  /* line 169, sass/_screen_768.scss */
+  /* line 179, sass/_screen_768.scss */
   .browse.stories .mobile-secondary-nav a {
     background: #065180;
   }
 
   /* Exhibits */
-  /* line 174, sass/_screen_768.scss */
+  /* line 184, sass/_screen_768.scss */
   #exhibit-pages {
     display: none;
   }
 
-  /* line 178, sass/_screen_768.scss */
+  /* line 188, sass/_screen_768.scss */
   #mobile-exhibit-pages {
     display: block;
     clear: both;
@@ -2154,7 +2163,7 @@ th {
     display: block;
     clear: both;
   }
-  /* line 185, sass/_screen_768.scss */
+  /* line 195, sass/_screen_768.scss */
   #mobile-exhibit-pages ul {
     position: absolute;
     z-index: 199;
@@ -2163,14 +2172,14 @@ th {
     padding-left: 0;
     margin: 0;
   }
-  /* line 194, sass/_screen_768.scss */
+  /* line 204, sass/_screen_768.scss */
   #mobile-exhibit-pages li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 201, sass/_screen_768.scss */
+  /* line 211, sass/_screen_768.scss */
   #mobile-exhibit-pages a {
     text-decoration: none;
     display: block;
@@ -2178,37 +2187,37 @@ th {
     border: 1px solid #ccc;
     border-width: 1px 1px 0 1px;
   }
-  /* line 209, sass/_screen_768.scss */
+  /* line 219, sass/_screen_768.scss */
   #mobile-exhibit-pages a:hover {
     background: #fff;
   }
-  /* line 211, sass/_screen_768.scss */
+  /* line 221, sass/_screen_768.scss */
   #mobile-exhibit-pages > a:first-child {
     background: #cc0000;
     color: #fff;
     cursor: pointer;
   }
-  /* line 217, sass/_screen_768.scss */
+  /* line 227, sass/_screen_768.scss */
   #mobile-exhibit-pages li.current a {
     background: #fff;
     color: #4799CC;
   }
-  /* line 222, sass/_screen_768.scss */
+  /* line 232, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul {
     position: relative;
     width: 100%;
   }
-  /* line 227, sass/_screen_768.scss */
+  /* line 237, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul a:before {
     content: "-- ";
   }
-  /* line 231, sass/_screen_768.scss */
+  /* line 241, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul ul a:before {
     content: "---- ";
   }
 
   /* Footer */
-  /* line 238, sass/_screen_768.scss */
+  /* line 248, sass/_screen_768.scss */
   footer {
     padding: 20px;
   }

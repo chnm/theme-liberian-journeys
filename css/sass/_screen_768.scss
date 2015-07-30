@@ -121,6 +121,16 @@ nav.items-nav.secondary-nav {
     }
 }
 
+.documents .item, .stories .item, .search .item, .browse.all .item {
+    .item-img {
+        width:100%;
+
+            img {
+                width:100%;
+            }
+    }
+}
+
 .mobile-secondary-nav { 
     display:block;
     clear:both;
