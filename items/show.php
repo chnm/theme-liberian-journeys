@@ -34,6 +34,10 @@
         </div>
 
         <div class="element">
+            <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
+        </div>
+
+        <div class="element">
             <?php echo metadata('item', array('Dublin Core', 'Type')); ?>
         </div>
 
