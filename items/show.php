@@ -18,30 +18,37 @@
     <div id="secondary-metadata">
 
         <div class="element">
+            <h3>Creator</h3>
             <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
         </div>
 
         <div class="element">
+            <h3>Date</h3>
             <?php echo metadata('item', array('Dublin Core', 'Date')); ?>
         </div>
 
         <div class="element">
+            <h3>Coverage</h3>
             <?php echo metadata('item', array('Dublin Core', 'Coverage')); ?>
         </div>
 
         <div class="element">
+            <h3>Transcription</h3>
             <?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?>
         </div>
 
         <div class="element">
+            <h3>Text</h3>
             <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
         </div>
 
         <div class="element">
+            <h3>Type</h3>
             <?php echo metadata('item', array('Dublin Core', 'Type')); ?>
         </div>
 
         <div class="element">
+            <h3>Identifier</h3>
             <?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>
         </div>
 
