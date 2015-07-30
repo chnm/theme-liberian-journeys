@@ -560,7 +560,7 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     border-top: 1px solid #ededed;
 }
 
-.documents .item, .stories .item, .search .item {
+.documents .item, .stories .item, .search .item, .browse.all .item {
     border:2px solid #f1f1f2;
     margin-bottom:1rem;
     padding:10px;
@@ -570,26 +570,31 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
         margin-bottom:0.5rem;
     }
 
-    .item-thumb {
+    .item-img {
         display: block;
         float: left;
         margin-right:10px;
+        @include span(2);
+
+            img {
+                width:100%;
+            }
     }
 }
 
-.items.browse.all .hentry {
-    float:left;
-    clear:both;
-    width:100%;
-    border-bottom: 1px solid #ededed;
-    margin-bottom:10px;
-    padding-bottom:10px;
+// .items.browse.all .hentry {
+//     float:left;
+//     clear:both;
+//     width:100%;
+//     border-bottom: 1px solid #ededed;
+//     margin-bottom:10px;
+//     padding-bottom:10px;
 
-    .item-img {
-        float:left;
-        margin-right:10px;
-    }
-}
+//     .item-img {
+//         float:left;
+//         margin-right:10px;
+//     }
+// }
 
 /* Items Show */
 .element {
