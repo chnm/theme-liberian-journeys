@@ -39,12 +39,6 @@
             <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
 
-            <?php if (metadata('item', 'has files')): ?>
-            <div class="item-img">
-                <?php echo link_to_item(item_image('square_thumbnail')); ?>
-            </div>
-            <?php endif; ?>
-
             <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
             <div class="item-description">
                 <?php echo $description; ?>
@@ -242,6 +236,13 @@
                         <span class="ital">Date: <?php echo metadata('item', array('Dublin Core', 'Date')); ?></span>
                     </div>
                 <?php endif; ?>
+
+                <?php if (metadata('item', 'has files')): ?>
+                    <div class="item-img">
+                        <?php echo link_to_item(item_image('square_thumbnail')); ?>
+                    </div>
+                <?php endif; ?>
+                
                 <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>500))): ?>
                     <div class="item-description">
                         <?php echo $description; ?>&nbsp;&nbsp;<?php echo link_to_item('Read more&rarr;'); ?>
