@@ -11,35 +11,31 @@ if (!Omeka) {
 
         //function the will toggle the menu
         $('.menu').click(function() {
-            var x = $(this).attr('id');
-
-            if (x==1) {
-                $("#mobile-nav .navigation").slideUp();
-                $(this).attr('id', '0');
-            } else {
-                $("#mobile-nav .navigation").slideDown();
-                $(this).attr('id','1');
-            }
+            $('#mobile-nav .navigation').slideToggle();
         });
     });
 
+    // $(function(){
+    //     var dropdownMenu = $('.mobile-secondary-nav');
+    //     dropdownMenu.prepend('<a class="second-menu">Collections <span class="arrow">&#9660;</span></a>');
+    //     //Hide the rest of the menu
+    //     $('.mobile-secondary-nav .navigation').hide();
+
+    //     //function the will toggle the menu
+    //     $('.second-menu').click(function() {
+    //         $('.mobile-secondary-nav .navigation').slideToggle();
+    //     });
+    // });
+
     $(function(){
-        var dropdownMenu = $('.mobile-secondary-nav');
-        dropdownMenu.prepend('<a class="second-menu">Collections <span class="arrow">&#9660;</span></a>');
+        var dropdownMenu = $('#mobile-exhibit-pages');
+        dropdownMenu.prepend('<a class="exhibit-menu">Exhibit Pages<span class="arrow">&#9660;</span></a>');
         //Hide the rest of the menu
-        $('.mobile-secondary-nav .navigation').hide();
+        $('#mobile-exhibit-pages nav ul').hide();
 
         //function the will toggle the menu
-        $('.second-menu').click(function() {
-            var x = $(this).attr('id');
-
-            if (x==1) {
-                $(".mobile-secondary-nav .navigation").slideUp();
-                $(this).attr('id', '0');
-            } else {
-                $(".mobile-secondary-nav .navigation").slideDown();
-                $(this).attr('id','1');
-            }
+        $('.exhibit-menu').click(function() {
+            $('#mobile-exhibit-pages nav ul').slideToggle();
         });
     });
     

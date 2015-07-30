@@ -309,9 +309,9 @@ body.standard #top-nav ul li.collections:hover,body.standard #top-nav ul li.coll
     overflow:hidden;
 }
 
-#content ul {
-    margin-bottom:10px;
-}
+// #content ul {
+//     margin-bottom:10px;
+// }
 
 #main {
     clear:both;
@@ -771,9 +771,65 @@ div.exhibit {
     }
 }
 
-.exhibit-page .small-block-grid-3 > li {
-    width:32%;
-    padding:0;
+#exhibit-pages {
+    h4 {
+        font-size: $base-font-size * 1.125
+    }
+    h4 a, a {
+    padding:2px 5px;
+    }
+    ul {
+        li {
+            width:100%;
+            margin-bottom: .5em;
+
+            > ul {
+                border-left:1px solid rgba(204,0,0,1);
+
+                > li {
+                    margin-bottom:0;
+                }
+            }
+        }
+        li a {
+            display:block;
+            border-bottom:1px solid rgba(204,0,0,1);
+
+        }
+        li a:hover {
+                background: rgba(204,0,0,.75);
+                color: #fff;
+            }
+
+        li.current > a {
+            background: rgba(204,0,0,.75);
+            color: #fff;
+        }
+    }
+}
+
+#mobile-exhibit-pages {
+    display:none;
+}
+
+.exhibits {
+    #main {
+        #primary, #exhibit-blocks {
+            @include span(9);
+
+            .representative-image {
+                @include span (3);
+
+                img {
+                    width:100%;
+                }
+            }
+        }
+
+        #exhibit-pages {
+            @include span(last 3)
+        }
+    }
 }
 
 .collections-page .tabs-content {
