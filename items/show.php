@@ -16,41 +16,54 @@
     
     <button class="more-info">More information about this item</button>
     <div id="secondary-metadata">
+        <?php if (metadata('item', array('Dublin Core', 'Creator'))): ?>
+            <div class="element">
+                <h3>Creator</h3>
+                <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
+            </div>
+        <?php endif; ?>
 
-        <div class="element">
-            <h3>Creator</h3>
-            <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
-        </div>
+        <?php if (metadata('item', array('Dublin Core', 'Date'))): ?>
+            <div class="element">
+                <h3>Date</h3>
+                <?php echo metadata('item', array('Dublin Core', 'Date')); ?>
+            </div>
+        <?php endif; ?>
 
-        <div class="element">
-            <h3>Date</h3>
-            <?php echo metadata('item', array('Dublin Core', 'Date')); ?>
-        </div>
+        <?php if (metadata('item', array('Dublin Core', 'Coverage'))): ?>
+            <div class="element">
+                <h3>Coverage</h3>
+                <?php echo metadata('item', array('Dublin Core', 'Coverage')); ?>
+            </div>
+        <?php endif; ?>
 
-        <div class="element">
-            <h3>Coverage</h3>
-            <?php echo metadata('item', array('Dublin Core', 'Coverage')); ?>
-        </div>
+        <?php if (metadata('item', array('Item Type Metadata', 'Transcription'))): ?>
+            <div class="element">
+                <h3>Transcription</h3>
+                <?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?>
+            </div>
+        <?php endif; ?>
 
-        <div class="element">
-            <h3>Transcription</h3>
-            <?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?>
-        </div>
+        <?php if (metadata('item', array('Item Type Metadata', 'Text'))): ?>
+            <div class="element">
+                <h3>Text</h3>
+                <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
+            </div>
+        <?php endif; ?>
 
-        <div class="element">
-            <h3>Text</h3>
-            <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
-        </div>
-
-        <div class="element">
-            <h3>Type</h3>
-            <?php echo metadata('item', array('Dublin Core', 'Type')); ?>
-        </div>
-
-        <div class="element">
-            <h3>Identifier</h3>
-            <?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>
-        </div>
+        <?php if (metadata('item', 'item_type_name')): ?>
+            <div class="element">
+                <h3>Type</h3>
+                <?php echo metadata('item', 'item_type_name'); ?>
+            </div>
+        <?php endif; ?>
+        
+        <?php if (metadata('item', array('Dublin Core', 'Identifier'))): ?>
+            <div class="element">
+                <h3>Identifier</h3>
+                <?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>
+            </div>
+        <?php endif; ?>
 
         <?php echo all_element_texts('item'); ?>
         <!-- The following prints a citation for this item. -->
