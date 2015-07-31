@@ -266,6 +266,11 @@
         <div class="item hentry">
         <h5><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h5>
             <div class="item-meta">
+            <?php if(metadata('item', 'item_type_name')): ?>
+                    <div class="item-type">
+                        <span class="ital"><?php echo metadata('item', 'item_type_name'); ?></span>
+                    </div>
+                <?php endif; ?>
             <?php if (metadata('item', 'has files')): ?>
             <div class="item-img">
                 <?php echo link_to_item(item_image('square_thumbnail')); ?>
