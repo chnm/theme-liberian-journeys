@@ -67,7 +67,7 @@
 
     <div class="page-info">
         <h3>Collection: Images</h3> 
-        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>
+        <p>Loring Whitman, the official photographer, took most of the expedition’s still photos with a Graflex 4”x 5” sheet-film camera.  This collection contains nearly 600 images of Liberian people, places and activities.  Because the expedition’s purpose was scientific, there are many documentary images of birds, mammals, snakes and insects as well as the medical conditions encountered.</p>
     </div>
 
     <?php echo print_secondary_nav(); ?>
@@ -121,7 +121,7 @@
 
     <div class="page-info">
         <h3>Collection: Historic Film</h3> 
-        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+        <p>The motion picture footage in this collection was shot by the expedition photographer, Loring Whitman, on a 35 mm Bell & Howell Eyemo camera.  The collection contains approximately 2 hours of the earliest motion picture record known to exist documenting the life and culture among different ethnic groups in Monrovia and throughout the interior of Liberia.</p>   
     </div>
 
     <?php echo print_secondary_nav(); ?>
@@ -147,7 +147,7 @@
 
     <div class="page-info">
         <h3>Collection: Diaries</h3> 
-        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+        <p>As scientists each expedition member kept a hand-written diary of his Liberian observations and experiences: Featured are the daily chronicles by Mr. Loring Whitman, expedition photographer and assistant ornithologist, and expedition chief, Dr. Richard Pearson Strong,  as they traveled in Liberia from June 29 to November 21, 1926, plus accounts of their travel  by ship from England to Liberia.</p>   
     </div>
 
     <?php echo print_secondary_nav(); ?>
@@ -181,7 +181,7 @@
 
     <div class="page-info">
         <h3>Collection: Documents</h3> 
-        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+        <p>The documents collection consists of letters to his family by Mr. Loring Whitman, expedition photographer and assistant ornithologist, as well as his collected memorabilia, newspaper articles, postcards and hand-drawn maps and illustrations from his trip.</p>   
     </div>
 
     <?php echo print_secondary_nav(); ?>
@@ -221,7 +221,7 @@
 
     <div class="page-info">
         <h3>Collection: Stories</h3> 
-        <p>Some text about exploring the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet possimus porro, libero facere.</p>   
+        <p>The expedition photographs and motion picture footage offer an opportunity to gather stories of Liberia’s past from diverse voices.  The videos in this collection contain stories from elders and youth, scholars and lay people, about the people and places encountered on the expedition’s journey.  </p>   
     </div>
 
     <?php echo print_secondary_nav(); ?>
