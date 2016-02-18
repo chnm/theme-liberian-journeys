@@ -1959,13 +1959,26 @@ th {
     float: right;
   }
 
+  /* line 6, sass/_screen_768.scss */
+  .contribution form {
+    width: 90%;
+  }
+
+  /* line 10, sass/_screen_768.scss */
+  fieldset, textarea, option, div#contribution-type-form div.inputs, div#contribution-type-form input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
   /*Header*/
-  /* line 7, sass/_screen_768.scss */
+  /* line 20, sass/_screen_768.scss */
   #top-nav {
     display: none;
   }
 
-  /* line 11, sass/_screen_768.scss */
+  /* line 24, sass/_screen_768.scss */
   #mobile-nav {
     display: block;
     clear: both;
@@ -1980,7 +1993,7 @@ th {
     display: block;
     clear: both;
   }
-  /* line 17, sass/_screen_768.scss */
+  /* line 30, sass/_screen_768.scss */
   #mobile-nav ul {
     position: absolute;
     z-index: 199;
@@ -1990,14 +2003,14 @@ th {
     padding-left: 0;
     margin: 0;
   }
-  /* line 27, sass/_screen_768.scss */
+  /* line 40, sass/_screen_768.scss */
   #mobile-nav li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 34, sass/_screen_768.scss */
+  /* line 47, sass/_screen_768.scss */
   #mobile-nav a {
     text-decoration: none;
     display: block;
@@ -2005,96 +2018,96 @@ th {
     border: 1px solid #ccc;
     border-width: 1px 1px 0 1px;
   }
-  /* line 42, sass/_screen_768.scss */
+  /* line 55, sass/_screen_768.scss */
   #mobile-nav a:hover {
     background: #fff;
   }
-  /* line 44, sass/_screen_768.scss */
+  /* line 57, sass/_screen_768.scss */
   #mobile-nav > a:first-child {
     background: #fff;
     cursor: pointer;
   }
-  /* line 49, sass/_screen_768.scss */
+  /* line 62, sass/_screen_768.scss */
   #mobile-nav li.active a {
     background: #fff;
     color: #663b29;
   }
 
-  /* line 55, sass/_screen_768.scss */
+  /* line 68, sass/_screen_768.scss */
   #search-container {
     width: 100%;
     float: none;
     padding-top: 10px;
   }
 
-  /* line 61, sass/_screen_768.scss */
+  /* line 74, sass/_screen_768.scss */
   #site-title {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 25px;
   }
-  /* line 66, sass/_screen_768.scss */
+  /* line 79, sass/_screen_768.scss */
   #site-title h1 {
     font-size: 28px;
     line-height: 25.8px;
     display: block;
     float: left;
   }
-  /* line 73, sass/_screen_768.scss */
+  /* line 86, sass/_screen_768.scss */
   #site-title h4 {
     font-size: 12.8px;
     display: block;
     clear: both;
   }
 
-  /* line 81, sass/_screen_768.scss */
+  /* line 94, sass/_screen_768.scss */
   #main > div, #portals > div {
     width: 100% !important;
   }
 
-  /* line 85, sass/_screen_768.scss */
+  /* line 98, sass/_screen_768.scss */
   .overlay {
     opacity: 0.75;
   }
 
   /* Home Page */
   /* Items Browse */
-  /* line 102, sass/_screen_768.scss */
+  /* line 115, sass/_screen_768.scss */
   .page-info h3 {
     display: inline;
   }
 
-  /* line 106, sass/_screen_768.scss */
+  /* line 119, sass/_screen_768.scss */
   nav.items-nav.secondary-nav {
     display: none;
   }
 
-  /* line 110, sass/_screen_768.scss */
+  /* line 123, sass/_screen_768.scss */
   .items-list .item-img, .items-list .item-img img, .items-list .item-img:nth-child(6n), .items-list > .item, .items-list .item:nth-child(3n), .films .item-img:nth-child(4n), .item-themes, .item-themes select, #sort-links {
     width: 100%;
     clear: both;
     height: auto;
   }
 
-  /* line 116, sass/_screen_768.scss */
+  /* line 129, sass/_screen_768.scss */
   .items-list .item {
     margin-bottom: 10px;
   }
-  /* line 119, sass/_screen_768.scss */
+  /* line 132, sass/_screen_768.scss */
   .items-list .item .item-description {
     clear: left;
   }
 
-  /* line 125, sass/_screen_768.scss */
+  /* line 138, sass/_screen_768.scss */
   .documents .item .item-img, .stories .item .item-img, .search .item .item-img, .browse.all .item .item-img {
     width: 100%;
   }
-  /* line 128, sass/_screen_768.scss */
+  /* line 141, sass/_screen_768.scss */
   .documents .item .item-img img, .stories .item .item-img img, .search .item .item-img img, .browse.all .item .item-img img {
     width: 100%;
   }
 
-  /* line 134, sass/_screen_768.scss */
+  /* line 147, sass/_screen_768.scss */
   .mobile-secondary-nav {
     display: block;
     clear: both;
@@ -2108,20 +2121,20 @@ th {
     display: block;
     clear: both;
   }
-  /* line 140, sass/_screen_768.scss */
+  /* line 153, sass/_screen_768.scss */
   .mobile-secondary-nav ul {
     width: 100%;
     padding-left: 0;
     margin: 0;
   }
-  /* line 149, sass/_screen_768.scss */
+  /* line 162, sass/_screen_768.scss */
   .mobile-secondary-nav li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 156, sass/_screen_768.scss */
+  /* line 169, sass/_screen_768.scss */
   .mobile-secondary-nav a {
     text-decoration: none;
     display: block;
@@ -2130,34 +2143,34 @@ th {
     border-width: 1px 1px 0 1px;
     color: #fff;
   }
-  /* line 165, sass/_screen_768.scss */
+  /* line 178, sass/_screen_768.scss */
   .mobile-secondary-nav > a:first-child {
     background: #fafafa;
     cursor: pointer;
   }
 
-  /* line 171, sass/_screen_768.scss */
+  /* line 184, sass/_screen_768.scss */
   .browse.standard .mobile-secondary-nav a {
     background: rgba(0, 127, 36, 0.75);
   }
 
-  /* line 175, sass/_screen_768.scss */
+  /* line 188, sass/_screen_768.scss */
   .browse.standard .mobile-secondary-nav a.current {
     background: #007f24;
   }
 
-  /* line 179, sass/_screen_768.scss */
+  /* line 192, sass/_screen_768.scss */
   .browse.stories .mobile-secondary-nav a {
     background: #065180;
   }
 
   /* Exhibits */
-  /* line 184, sass/_screen_768.scss */
+  /* line 197, sass/_screen_768.scss */
   #exhibit-pages {
     display: none;
   }
 
-  /* line 188, sass/_screen_768.scss */
+  /* line 201, sass/_screen_768.scss */
   #mobile-exhibit-pages {
     display: block;
     clear: both;
@@ -2173,7 +2186,7 @@ th {
     display: block;
     clear: both;
   }
-  /* line 195, sass/_screen_768.scss */
+  /* line 208, sass/_screen_768.scss */
   #mobile-exhibit-pages ul {
     position: absolute;
     z-index: 199;
@@ -2182,14 +2195,14 @@ th {
     padding-left: 0;
     margin: 0;
   }
-  /* line 204, sass/_screen_768.scss */
+  /* line 217, sass/_screen_768.scss */
   #mobile-exhibit-pages li {
     text-align: left;
     display: block;
     overflow: hidden;
     width: 100%;
   }
-  /* line 211, sass/_screen_768.scss */
+  /* line 224, sass/_screen_768.scss */
   #mobile-exhibit-pages a {
     text-decoration: none;
     display: block;
@@ -2197,37 +2210,37 @@ th {
     border: 1px solid #ccc;
     border-width: 1px 1px 0 1px;
   }
-  /* line 219, sass/_screen_768.scss */
+  /* line 232, sass/_screen_768.scss */
   #mobile-exhibit-pages a:hover {
     background: #fff;
   }
-  /* line 221, sass/_screen_768.scss */
+  /* line 234, sass/_screen_768.scss */
   #mobile-exhibit-pages > a:first-child {
     background: #cc0000;
     color: #fff;
     cursor: pointer;
   }
-  /* line 227, sass/_screen_768.scss */
+  /* line 240, sass/_screen_768.scss */
   #mobile-exhibit-pages li.current a {
     background: #fff;
     color: #4799CC;
   }
-  /* line 232, sass/_screen_768.scss */
+  /* line 245, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul {
     position: relative;
     width: 100%;
   }
-  /* line 237, sass/_screen_768.scss */
+  /* line 250, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul a:before {
     content: "-- ";
   }
-  /* line 241, sass/_screen_768.scss */
+  /* line 254, sass/_screen_768.scss */
   #mobile-exhibit-pages li ul ul a:before {
     content: "---- ";
   }
 
   /* Footer */
-  /* line 248, sass/_screen_768.scss */
+  /* line 261, sass/_screen_768.scss */
   footer {
     padding: 20px;
   }

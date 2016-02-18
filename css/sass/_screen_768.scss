@@ -3,6 +3,19 @@
     float:right;
 }
 
+.contribution form {
+    width: 90%;
+}
+
+fieldset, textarea, option, div#contribution-type-form div.inputs, div#contribution-type-form input  {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width:100%;
+    
+}
+
 /*Header*/
 #top-nav {
     display:none;
